@@ -6,12 +6,11 @@ body {
     margin: 0;
     background-color: #ffffff;
     color: #252525;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
 }
 
 .catalog {
     width: 88%;
-    max-width: 1200px;
     margin: 36px auto 0;
 }
 
@@ -58,6 +57,7 @@ body {
     border-radius: 8px;
     background-color: #eeeeee;
 }
+
 .catalog-card-image {
     display: block;
     width: 100%;
@@ -68,7 +68,7 @@ body {
 
 .catalog-card-title {
     position: absolute;
-    left: 7%;
+    left: 15%;
     bottom: 6%;
     margin: 0;
     padding: 7px 12px;
@@ -81,3 +81,16 @@ body {
     font-weight: 400;
     text-align: center;
 }
+
+/* сделать через флекс-бокс */
+
+@media screen and (max-width: 994px) {
+    .catalog-header {
+        flex-direction: column;
+        padding: 20px;
+    }
+}
+
+/* или можно писать прямо в header-тег flex-wrap: wrap но не всегда */
+/* чем ниже тем меньше пикселей */
+
